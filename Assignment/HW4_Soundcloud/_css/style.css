@@ -1,1 +1,22 @@
 /*CSS*/
+
+li {
+	list-style: none;
+}
+
+article {
+	display: flex;
+	flex-direction: row;
+}
+
+img {
+	display: inline-flex;
+}
+
+.list-container {
+	width: 50%;
+}
+
+.song {
+	margin-bottom: 2%;
+}

@@ -2,14 +2,25 @@
 <head>
     <title>Play Music Here</title>
     <meta charset="utf-8">
-    <script src="https://code.jquery.com/jquery-2.2.4.min.js" integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44=" crossorigin="anonymous"></script>
+    <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
+    <!-- <script src="https://code.jquery.com/jquery-2.2.4.min.js" integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44=" crossorigin="anonymous"></script> -->
+    <script type="text/javascript" src="https://stratus.soundcloud.com/stratus.js"></script>
     <link rel="stylesheet" href="_css/style.css">
 </head>
     <body>
+        <h1>Find Music Here</h1>
         <input type="text" id="query" placeholder="Find Music">
         <button id="search">Search</button>
-        <div id="search-results">Search Results</div>
-        <div id="playlist">Playlist</div>
+        <article>
+            <section class="list-container">
+                <h2>Search Results</h2>
+                <div id="search-results"></div>
+            </section>
+            <section class="list-container">
+                <h2>Playlist</h2>
+                <div id="playlist"></div>
+            </section>
+        </article>
         <script type="text/javascript" src="_js/main.js"> </script>
     </body>
 </html>
