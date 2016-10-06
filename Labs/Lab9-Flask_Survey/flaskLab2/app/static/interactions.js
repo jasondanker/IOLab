@@ -2,12 +2,20 @@ $('#submit-survey').on('click', function submitSurvey() {
 	var color = $("input[name=color]").val();
 	var food = $("input[name=food]").val();
 	var vacation = $("input[name=vacation]").val();
+	var ioLab = $("input[name=time-io-lab]").val();
+	var otherWork = $("input[name=time-other-work]").val();
+	var commute = $("input[name=time-commute]").val();
+	var relax = $("input[name=time-relax]").val();
 	var feBefore = $("input[name=front-end-before]").val();
 	var feAfter = $("input[name=front-end-after]").val();
 	$.post("submit-survey",
 		{color: color,
 		food: food,
 		vacation: vacation,
+		ioLab: ioLab,
+		otherWork: otherWork,
+		commute: commute,
+		relax: relax,
 		feBefore: feBefore,
 		feAfter: feAfter},
 		function(data) {
@@ -29,6 +37,18 @@ $(document).ready(function applySliderLabels() {
 
 	currentValue = $("#fe-after").val();
 	$("#fe-after").next().html(currentValue);
+
+	currentValue = $("#t-io-lab").val();
+	$("#t-io-lab").next().html(currentValue);
+
+	currentValue = $("#t-other-work").val();
+	$("#t-other-work").next().html(currentValue);
+
+	currentValue = $("#t-commute").val();
+	$("#t-commute").next().html(currentValue);
+
+	currentValue = $("#t-relax").val();
+	$("#t-relax").next().html(currentValue);
 });
 
 

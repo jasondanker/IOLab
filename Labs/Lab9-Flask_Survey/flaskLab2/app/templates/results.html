@@ -20,6 +20,12 @@
 		<span class="result-item">Your favorite food is {{ surveyResponse['food']}}</span>
 		<span class="result-item">Your favorite vacation spot is {{ surveyResponse['vacation']}}</span>
 
+		<h3>YOU HAVE NO TIME! (or do you?)</h3>
+		<span class="result-item">You spend {{ surveyResponse['t-io-lab']}} hour(s) on IO Lab per day</span>
+		<span class="result-item">You spend {{ surveyResponse['t-other-work']}} hour(s) on other work per day</span>
+		<span class="result-item">You spend {{ surveyResponse['t-commute']}} hour(s) commuting per day</span>
+		<span class="result-item">You spend {{ surveyResponse['t-relax']}} hour(s) relaxing per day</span>
+
 		<h3>Wow! Your front end skillz are getting sharp!</h3>
 		<span class="result-item">Before IO Lab, your front end skillz were at a {{ surveyResponse['fe-before']}}</span>
 		<span class="result-item">But in just a few short weeks of IO Lab, your front end skillz are now a {{ surveyResponse['fe-after']}}</span>
